@@ -25,3 +25,4 @@ class GptBlock(nn.Module) :
         x=x+self.attention(self.layerNorm1(x))
         x=x+self.FFN(self.layerNorm2(x))
         return x
+
