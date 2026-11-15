@@ -1,6 +1,6 @@
 import torch 
 from torch import nn
-from attention import CausalSelfAttention
+from .attention import CausalSelfAttention
 
 class FFN(nn.Module) :
     def __init__(self , d_model,d_ff):
